@@ -17,7 +17,7 @@ var intrebari=[
 ];
 var raspunsuri=[];
 var btn= document.querySelector('#btn');
-var msg= document.querySelector('h1');
+var msg= document.querySelector('h3');
 var inp= document.querySelector('input');
 
 var i1=0,
