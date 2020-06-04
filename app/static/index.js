@@ -1,11 +1,11 @@
 var intrebari=[
-    'sunt un caine rau, '+"\n"+' eu rup lesa '+"\n"+' nu ma poti dreasa.',
+    '<p>sunt un caine rau,</p> <p> eu rup lesa </p> nu ma poti dreasa.',
 
-    'Tu cand mergi la o plimbare'+"\n"+' Ori te cheama o labuta '+"\n"+' Baga mana in buzunare'+"\n"+' Ya de-acolo o punguta.',
+    '<p>Tu cand mergi la o plimbare</p> <p>Ori te cheama o labuta</p><p> Baga mana in buzunare</p> Ya de-acolo o punguta.',
 
     'Poate ai noroc si gasesti cu branza.',
 
-    'Juvenes dum sumus'+"\n"+' Post jucundam juventutem'+"\n"+' Post molestam senectutem'+"\n"+' Nos habebit humus'+"\n"+' Nos habebit humus'+"\n"+' Vita nostra brevis est.',
+    '<p>Juvenes dum sumus</p><p> Post jucundam juventutem</p><p> Post molestam senectutem</p><p> Nos habebit humus</p><p> Nos habebit humus</p> Vita nostra brevis est.',
 
     '<p style="text-decoration: line-through;">adjectiv</p>\n verb',
 
