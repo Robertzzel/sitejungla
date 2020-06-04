@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Prima pagina</title>
+<style>
+    h1{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 110px;
+        color: black;
+    }
+    h2{
+        text-align: center;
+        font-size: 50px;
+        color: black;
+    }
+    button{
+        margin-top: 200px !important;
+    }
+    body { 
+        background: url({{ url_for('static', filename='img/home.jpg') }}) no-repeat center center fixed; 
+        background-size: cover;
+}
+
+
+</style>
+{% endblock %}
+
+
+{% block body %}
+
+<div id="bg">
+
+
+<div class="container">
+    <h1>Jungla Urbana</h1>
+    <h2>Sorina Edition</h2>
+</div>
+
+<form action="" method="POST">
+    <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <button type="submit" class="btn btn-success btn-lg ">Start</button>
+          </div>
+        </div>
+      </div>
+</form>
+
+</div>
+{% endblock %}
