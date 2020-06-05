@@ -47,69 +47,16 @@ btn.addEventListener('click',function(){
     rasp= inp.value;
 
 
-    //intrbarea 0
-    if(rasp == raspunsuri[0] && vec[0]==0)
-    {
-        vec=localStorage.getItem('vec').split(",");
-        vec[0]=1;
-        localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[0];
-    }
-
-    
-    //intrbarea 1
-    if(rasp == raspunsuri[1] && vec[1]==0)
-    {
-        vec=localStorage.getItem('vec').split(",");
-        vec[1]=1;
-        localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[1];
-    }
-
-    //intrbarea 2
-    if(rasp == raspunsuri[2] && vec[2]==0)
-    {
-        vec=localStorage.getItem('vec').split(",");
-        vec[2]=1;
-        localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[2];
-    }
-
-    //intrbarea 3
-    if(rasp == raspunsuri[3] && vec[3]==0)
-    {
-        vec=localStorage.getItem('vec').split(",");
-        vec[3]=1;
-        localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[3];
-    }
-
-    //intrbarea 4
-    if(rasp == raspunsuri[4] && vec[4]==0)
-    {
-        vec=localStorage.getItem('vec').split(",");
-        vec[4]=1;
-        localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[4];
-    }
-
-    //intrbarea 5
-    if(rasp == raspunsuri[5] && vec[5]==0)
-    {
-        vec=localStorage.getItem('vec').split(",");
-        vec[5]=1;
-        localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[5];
-    }
-
-    //intrbarea 6
-    if(rasp == raspunsuri[6] && vec[6]==0)
-    {
-        vec=localStorage.getItem('vec').split(",");
-        vec[6]=1;
-        localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[6];
-    }
+   for(let i=0;i<7;i++)
+   {
+       if(rasp == raspunsuri[i] && vec[i]==0)
+        {
+            vec=localStorage.getItem('vec').split(",");
+            vec[i]=1;
+            localStorage.setItem('vec',vec);
+            msg.innerHTML=intrebari[i];
+        }
+   }
 
     //intrbarea 7
     if(rasp == raspunsuri[7] && vec[7]==0)
@@ -130,7 +77,7 @@ btn.addEventListener('click',function(){
         var reset=document.querySelector('#reset');
         reset.addEventListener('click',function(){
             localStorage.clear();
-            location.replace("http://localhost:5000");
+            location.replace("https://ziuasorinei.herokuapp.com");
         });
     }
 });
@@ -151,7 +98,7 @@ if(vec[7]==1)
     var reset=document.querySelector('#reset');
     reset.addEventListener('click',function(){
          localStorage.clear();
-         location.replace("http://localhost:5000/start");
+         location.replace("https://ziuasorinei.herokuapp.com");
     });
 }
 
