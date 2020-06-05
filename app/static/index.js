@@ -1,6 +1,6 @@
 //initializari
 var intrebari=[
-    '<p>sunt un caine rau,</p> <p> eu rup lesa </p> nu ma poti dreasa.',
+    '<p>sunt un caine rau,</p> <p> eu rup lesa </p> nu ma poti dresa.',
 
     '<p>Tu cand mergi la o plimbare</p> <p>Ori te cheama o labuta</p><p> Baga mana in buzunare</p> Ya de-acolo o punguta.',
 
