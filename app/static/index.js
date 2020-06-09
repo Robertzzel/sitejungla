@@ -54,7 +54,12 @@ btn.addEventListener('click',function(){
             vec=localStorage.getItem('vec').split(",");
             vec[i]=1;
             localStorage.setItem('vec',vec);
-            msg.innerHTML=intrebari[i];
+
+            //animatie
+            $("h3").fadeOut("slow",function(){
+                msg.innerHTML=intrebari[i];
+                $("h3").fadeIn();
+            });
         }
    }
 
@@ -64,7 +69,13 @@ btn.addEventListener('click',function(){
         vec=localStorage.getItem('vec').split(",");
         vec[7]=1;
         localStorage.setItem('vec',vec);
-        msg.innerHTML=intrebari[7];
+
+        //animatie
+        $("h3").fadeOut("slow",function(){
+            msg.innerHTML=intrebari[7];
+            $("h3").fadeIn();
+        });
+        
 
         let buton=document.createElement('button');
         buton.setAttribute('type','button');
