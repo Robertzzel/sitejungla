@@ -1,3 +1,16 @@
+//functii
+
+function crearebtn(mesaj,parinte)
+{
+    let buton=document.createElement('button');
+    buton.setAttribute('type','button');
+    buton.setAttribute('id','reset');
+    buton.setAttribute('class','btn btn-outline-warning btn-lg');
+    buton.innerHTML= mesaj;
+    document.querySelector(parinte).appendChild(buton);
+}
+
+
 //initializari
 var intrebari=[
     '<p>sunt un caine rau,</p> <p> eu rup lesa </p> nu ma poti dresa.',
@@ -77,14 +90,9 @@ btn.addEventListener('click',function(){
         });
         
 
-        let buton=document.createElement('button');
-        buton.setAttribute('type','button');
-        buton.setAttribute('id','reset');
-        buton.setAttribute('class','btn btn-outline-warning btn-lg');
-        buton.innerHTML='Resetare';
-        document.querySelector('#div').appendChild(buton);
+        crearebtn('Resetare','#div');
 
-
+        //resetare memorie
         var reset=document.querySelector('#reset');
         reset.addEventListener('click',function(){
             localStorage.clear();
@@ -93,18 +101,13 @@ btn.addEventListener('click',function(){
     }
 });
 
-
+//nu stiam cum sa fac sa se creeze butonul cand dau refresh
 vec=localStorage.getItem('vec').split(",");
 
 if(vec[7]==1)
 {
 
-    let buton=document.createElement('button');
-    buton.setAttribute('type','button');
-    buton.setAttribute('id','reset');
-    buton.setAttribute('class','btn btn-outline-warning btn-lg');
-    buton.innerHTML='Resetare';
-    document.querySelector('#div').appendChild(buton);
+    crearebtn('Resetare','#div');
 
     var reset=document.querySelector('#reset');
     reset.addEventListener('click',function(){
