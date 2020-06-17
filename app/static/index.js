@@ -29,7 +29,7 @@ var intrebari=[
 
     'pare ca ai nevoie de ceva dulce'
 ];
-var raspunsuri=['0','1','2','3','4','5','6','7'];
+var raspunsuri=['0','nasul','Sailor','10 ani','Crengi','mar, sunca, paine','18 11','ce spun romanii'];
 var btn= document.querySelector('#btn');
 var msg= document.querySelector('h3');
 var inp= document.querySelector('input');
@@ -59,7 +59,7 @@ for(let i=0;i<vec.length;i++)
 btn.addEventListener('click',function(){
     rasp= inp.value;
 
-
+    //actualizez in vectorul din memorie la raspunsurile trimise
    for(let i=0;i<7;i++)
    {
        if(rasp == raspunsuri[i] && vec[i]==0)
@@ -67,6 +67,8 @@ btn.addEventListener('click',function(){
             vec=localStorage.getItem('vec').split(",");
             vec[i]=1;
             localStorage.setItem('vec',vec);
+
+            inp.value=""
 
             //animatie
             $("h3").fadeOut("slow",function(){
