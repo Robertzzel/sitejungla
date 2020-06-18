@@ -29,7 +29,7 @@ var intrebari=[
 
     'pare ca ai nevoie de ceva dulce'
 ];
-var raspunsuri=['0','nasul','Sailor','10 ani','Crengi','mar, sunca, paine','18 11','ce spun romanii'];
+var raspunsuri=['15','nasul','Sailor','10 ani','Crengi','mar, sunca, paine','18 11','ce spun romanii'];
 var btn= document.querySelector('#btn');
 var msg= document.querySelector('h3');
 var inp= document.querySelector('input');
